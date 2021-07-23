@@ -6,22 +6,23 @@ public class 알람시계 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		int h = sc.nextInt();
-		int m = sc.nextInt();
+		int score = sc.nextInt();
 		
-		if (m - 45 < 0) {
-			if (h - 1 < 0) {
-				h = 23;
-				System.out.printf("%d %d", h, 60 - (45 - m));
-			}
-			else {
-				System.out.printf("%d %d", (h - 1), 60 - (45 - m));
-			}
+		if (score >= 90) {
+			System.out.println("A");
+		}
+		else if (score >= 80) {
+			System.out.println("B");
+		}
+		else if (score >= 70) {
+			System.out.println("C");
+		}
+		else if (score >= 60) {
+			System.out.println("D");
 		}
 		else {
-			System.out.printf("%d %d", h, (m - 45));
+			System.out.println("F");
 		}
-			
 	}
 
 }
